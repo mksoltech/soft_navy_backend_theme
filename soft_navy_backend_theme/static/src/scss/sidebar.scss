@@ -1,0 +1,74 @@
+/* Copyright 2026 MKSOL TECH — Soft Navy Backend Theme */
+
+$brand-secondary: #2EC4B6;
+$brand-sidebar: #0A1A2F;
+$odoo-sidebar-width: 200px;
+$mksol-navbar-height: 46px;
+
+.app-sidebar-panel {
+    position: fixed;
+    top: var(--sn-navbar-height, $mksol-navbar-height);
+    left: 0;
+    bottom: 0;
+    width: var(--sn-sidebar-width, $odoo-sidebar-width);
+    z-index: 90;
+    background: linear-gradient(180deg, $brand-sidebar 0%, darken($brand-sidebar, 4%) 100%);
+    overflow-y: auto;
+    border-right: 1px solid rgba($brand-secondary, 0.25);
+    box-shadow: inset -1px 0 0 rgba(255, 255, 255, 0.04);
+
+    @media (max-width: 768px) {
+        display: none !important;
+    }
+}
+
+.app-sidebar-panel.toggle-sidebar {
+    display: none !important;
+}
+
+.app-sidebar {
+    white-space: nowrap;
+    padding: 10px 0 16px;
+
+    .app-sidebar-menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        > li {
+            display: block;
+            margin: 0;
+            padding: 0 8px;
+            border: 0;
+
+            > a {
+                display: block;
+                position: relative;
+                margin: 2px 0;
+                border: 0;
+                border-radius: 8px;
+                padding: 9px 12px;
+                text-decoration: none;
+                font-size: 13px;
+                font-weight: 500;
+                color: #CBD5E1;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                transition: background 0.15s ease, color 0.15s ease;
+            }
+        }
+
+        > li:hover > a {
+            background: rgba($brand-secondary, 0.16);
+            color: #fff;
+            box-shadow: inset 3px 0 0 $brand-secondary;
+        }
+    }
+}
+
+.app-sidebar-menuitem {
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    border-radius: 6px;
+}

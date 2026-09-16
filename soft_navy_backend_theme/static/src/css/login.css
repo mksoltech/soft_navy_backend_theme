@@ -1,0 +1,96 @@
+/* Soft Navy Backend Theme — Login / DB manager (plain CSS, Odoo 13 safe) */
+
+html,
+body.bg-100 {
+    min-height: 100% !important;
+}
+
+body.bg-100 {
+    background:
+        radial-gradient(circle at 12% 18%, rgba(46, 196, 182, 0.30), transparent 42%),
+        radial-gradient(circle at 88% 12%, rgba(244, 162, 97, 0.16), transparent 40%),
+        linear-gradient(160deg, #0F2747 0%, #163A5F 48%, #0A1A2F 100%) !important;
+    background-attachment: fixed !important;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+/* Login / database card */
+body.bg-100 .o_database_list,
+body.bg-100 .card,
+body.bg-100 .card.bg-100,
+body.bg-100 .oe_single_form,
+body.bg-100 .container .card {
+    border-radius: 16px !important;
+    border: 1px solid rgba(255, 255, 255, 0.14) !important;
+    background: rgba(255, 255, 255, 0.97) !important;
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.35) !important;
+}
+
+body.bg-100 .container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+/* Login form */
+.oe_login_form.soft_navy_login_form,
+body.bg-100 form.oe_login_form {
+    padding: 8px 4px 4px;
+}
+
+body.bg-100 .oe_login_form label,
+body.bg-100 .o_database_list label {
+    font-weight: 600;
+    color: #0F2747;
+}
+
+body.bg-100 .oe_login_form input.form-control,
+body.bg-100 .oe_login_form input,
+body.bg-100 .o_database_list input,
+body.bg-100 .o_database_list select {
+    border-radius: 8px !important;
+    border: 1px solid #D0D7E2 !important;
+    min-height: 38px;
+    box-shadow: none !important;
+}
+
+body.bg-100 .oe_login_form input:focus,
+body.bg-100 .o_database_list input:focus,
+body.bg-100 .o_database_list select:focus {
+    border-color: #2EC4B6 !important;
+    box-shadow: 0 0 0 3px rgba(46, 196, 182, 0.22) !important;
+    outline: none !important;
+}
+
+body.bg-100 .oe_login_form .btn-primary,
+body.bg-100 .o_database_list .btn-primary,
+body.bg-100 .btn-primary {
+    background: #2EC4B6 !important;
+    border-color: #2EC4B6 !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    box-shadow: 0 6px 16px rgba(46, 196, 182, 0.35) !important;
+    min-height: 40px;
+}
+
+body.bg-100 .oe_login_form .btn-primary:hover,
+body.bg-100 .o_database_list .btn-primary:hover,
+body.bg-100 .btn-primary:hover {
+    background: #249e93 !important;
+    border-color: #249e93 !important;
+}
+
+body.bg-100 .oe_login_form .btn-link,
+body.bg-100 a {
+    color: #2EC4B6 !important;
+}
+
+body.bg-100 .oe_login_form .btn-link:hover,
+body.bg-100 a:hover {
+    color: #1f8f85 !important;
+}
+
+/* Database manager list */
+body.bg-100 .list-group-item {
+    border-radius: 8px !important;
+    margin-bottom: 6px;
+}

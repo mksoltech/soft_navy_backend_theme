@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend" name="Soft Navy Backend Theme Assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/scss" href="/soft_navy_backend_theme/static/src/scss/style.scss"/>
+                <link rel="stylesheet" type="text/scss" href="/soft_navy_backend_theme/static/src/scss/sidebar.scss"/>
+                <script type="text/javascript" src="/soft_navy_backend_theme/static/src/js/sidebar.js"/>
+                <script type="text/javascript" src="/soft_navy_backend_theme/static/src/js/sidebar-toggle.js"/>
+                <script type="text/javascript" src="/soft_navy_backend_theme/static/src/js/menu_fix.js"/>
+            </xpath>
+        </template>
+
+        <!-- Login page (Odoo 13 loads frontend + common) -->
+        <template id="assets_frontend" name="Soft Navy Login Assets" inherit_id="web.assets_frontend">
+            <xpath expr="." position="inside">
+                <link rel="stylesheet" type="text/css" href="/soft_navy_backend_theme/static/src/css/login.css"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

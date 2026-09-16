@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Dynamic theme CSS must NOT be in web.assets_backend.
+        Inject a <link> into the HTML layout so the browser loads the controller URL.
+    -->
+    <template id="soft_navy_theme_css_links" inherit_id="web.layout" name="Soft Navy Dynamic Theme Links">
+        <xpath expr="//head" position="inside">
+            <t t-if="request.session.uid">
+                <link rel="stylesheet" type="text/css" href="/soft_navy/theme.css"/>
+            </t>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_company_form" model="ir.ui.view">
+        <field name="name">res.company.form.soft.navy.theme</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="base.view_company_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page name="soft_navy_theme" string="Theme Customization">
+                    <group>
+                        <group string="Brand Colors">
+                            <field name="theme_primary_color" placeholder="#0F2747"/>
+                            <field name="theme_secondary_color" placeholder="#2EC4B6"/>
+                            <field name="theme_accent_color" placeholder="#F4A261"/>
+                        </group>
+                        <group string="UI Colors">
+                            <field name="theme_surface_color" placeholder="#F4F7FA"/>
+                            <field name="theme_sidebar_color" placeholder="#0A1A2F"/>
+                            <field name="theme_text_color" placeholder="#334155"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Typography &amp; Layout">
+                            <field name="theme_font_family"/>
+                            <field name="theme_border_radius"/>
+                            <field name="theme_sidebar_width"/>
+                            <field name="theme_navbar_height"/>
+                        </group>
+                        <group string="Sidebar Defaults">
+                            <field name="theme_show_sidebar_default"/>
+                        </group>
+                    </group>
+                    <group string="Apps Dashboard">
+                        <group>
+                            <field name="dashboard_background" widget="image" class="oe_avatar"/>
+                        </group>
+                        <group>
+                            <field name="theme_dashboard_overlay"/>
+                        </group>
+                    </group>
+                    <group>
+                        <button name="action_reset_theme_defaults"
+                                type="object"
+                                string="Reset to Default Theme"
+                                class="oe_link"
+                                icon="fa-refresh"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
