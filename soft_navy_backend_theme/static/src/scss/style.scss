@@ -1,0 +1,378 @@
+/* Copyright 2026 MKSOL TECH — Soft Navy Backend Theme */
+
+$brand-primary: #0F2747;
+$brand-secondary: #2EC4B6;
+$brand-accent: #F4A261;
+$brand-surface: #F4F7FA;
+$brand-sheet: #FFFFFF;
+$brand-radius: 8px;
+$brand-primary-dark: darken($brand-primary, 8%);
+$brand-secondary-dark: darken($brand-secondary, 10%);
+$mksol-navbar-height: 46px;
+
+$gray-dark: #334155;
+$gray: #64748B;
+$gray-lighter: #E2E8F0;
+
+body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    background-color: $brand-surface;
+    color: $gray-dark;
+}
+
+body.o_web_client.soft_navy_font_small {
+    font-size: 13px;
+}
+
+body.o_web_client.soft_navy_font_medium {
+    font-size: 14px;
+}
+
+body.o_web_client.soft_navy_font_large {
+    font-size: 15px;
+}
+
+.o_loading {
+    background-color: $brand-secondary !important;
+}
+
+.o_main_navbar {
+    background: linear-gradient(90deg, $brand-primary 0%, darken($brand-primary, 4%) 60%, #163A5F 100%) !important;
+    border-bottom: 2px solid $brand-secondary;
+    box-shadow: 0 2px 12px rgba(15, 39, 71, 0.25);
+}
+
+.o_main_navbar > a:hover,
+.o_main_navbar > a:focus,
+.o_main_navbar > button:hover,
+.o_main_navbar > button:focus,
+.o_main_navbar > ul > li > a:hover,
+.o_main_navbar > ul > li > label:hover,
+.o_main_navbar .show .dropdown-toggle {
+    background-color: rgba($brand-secondary, 0.18);
+    color: inherit;
+}
+
+/* Content shift for fixed sidebar */
+body.o_web_client.soft_navy_sidebar_on .o_action_manager {
+    margin-left: var(--sn-sidebar-width, 200px);
+    width: auto;
+}
+
+.o_control_panel .o_cp_sidebar .o_hidden_input_file .o_form_binary_form span {
+    color: $gray-dark !important;
+}
+
+.btn {
+    border-radius: $brand-radius;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.1s ease;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: $brand-secondary;
+    border-color: $brand-secondary;
+    box-shadow: 0 2px 8px rgba($brand-secondary, 0.35);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: $brand-secondary-dark;
+    border-color: $brand-secondary-dark;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    border-radius: $brand-radius;
+}
+
+.btn:active,
+.btn.active {
+    box-shadow: none;
+}
+
+.btn-link {
+    color: $brand-secondary;
+}
+
+.o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button.btn-primary.disabled {
+    color: $brand-primary;
+}
+
+.o_form_view .o_form_statusbar > .o_statusbar_status > .o_arrow_button:not(.disabled):hover {
+    color: $brand-secondary;
+}
+
+.o_dropdown_toggler_btn,
+.o_dropdown_toggler_btn:hover,
+.o_dropdown_toggler_btn:focus,
+.btn-icon,
+.o_graph_button {
+    text-transform: none !important;
+    color: $gray-dark !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.dropdown-menu {
+    border-radius: $brand-radius;
+    border: 1px solid $gray-lighter;
+    box-shadow: 0 12px 28px rgba(15, 39, 71, 0.12);
+}
+
+oe_highlight {
+    color: #ffffff !important;
+    background-color: $brand-primary !important;
+}
+
+.o_external_button,
+.o_button_icon {
+    color: $brand-secondary !important;
+}
+
+.badge {
+    border: 1px solid $brand-secondary;
+    border-radius: 999px;
+}
+
+.o_calendar_container .o_calendar_sidebar_container .ui-datepicker table .ui-state-active {
+    background-color: $brand-primary !important;
+    color: #ffffff !important;
+}
+
+.o_calendar_container .o_calendar_sidebar_container .ui-datepicker table .ui-state-default {
+    color: $brand-primary;
+}
+
+.datepicker .table-sm > thead {
+    color: white;
+    background-color: $brand-primary;
+}
+
+.datepicker .table-sm > tbody > tr > td.active,
+.datepicker .table-sm > tbody > tr > td .active {
+    background-color: $brand-secondary;
+    border-radius: $brand-radius;
+}
+
+.o_searchview {
+    border-radius: $brand-radius;
+    border: 1px solid $gray-lighter !important;
+
+    .o_searchview_facet {
+        background-color: #ffffff;
+        border-radius: 6px;
+
+        .o_searchview_facet_label {
+            background-color: $brand-primary;
+        }
+    }
+}
+
+a {
+    color: $brand-secondary;
+    text-decoration: none;
+
+    &:hover {
+        color: $brand-secondary-dark;
+    }
+}
+
+.o_control_panel {
+    background-color: $brand-sheet;
+    border-bottom: 1px solid $gray-lighter;
+}
+
+.breadcrumb {
+    background-color: inherit;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+textarea,
+select,
+.o_form_view.o_form_editable .o_form_field_many2manytags,
+.o_searchview {
+    border: 1px solid $gray-lighter;
+    border-radius: $brand-radius;
+    background-color: #fff;
+}
+
+.o_web_client input:focus,
+.o_web_client textarea:focus,
+.o_web_client select:focus {
+    outline: none;
+    border-color: $brand-secondary !important;
+    box-shadow: 0 0 0 3px rgba($brand-secondary, 0.2);
+}
+
+.o_input {
+    border: 1px solid $gray-lighter;
+    border-radius: $brand-radius;
+    color: $gray-dark;
+}
+
+.o_field_widget {
+    &.o_field_many2one .o_external_button {
+        color: $brand-secondary;
+    }
+}
+
+.o_required_modifier {
+    &.o_input,
+    .o_input {
+        background-color: rgba($brand-secondary, 0.08) !important;
+    }
+}
+
+.input-group-text {
+    background-color: transparent;
+    border: 0;
+}
+
+.o_list_view.table {
+    border: none;
+}
+
+.o_list_view.table thead,
+.o_list_view.table tfoot,
+.o_list_view.table td,
+.o_list_view.table th {
+    border: none;
+}
+
+.o_list_view.table thead {
+    background: linear-gradient(180deg, #E8EEF5 0%, #DDE6F0 100%);
+    color: $brand-primary;
+    font-weight: 600;
+}
+
+.o_list_view.table thead > tr > th.o_column_sortable:hover {
+    background-color: darken(#DDE6F0, 4%);
+}
+
+.o_list_view.table tbody tr.o_group_header {
+    background-color: #E8EEF5;
+    background-image: none;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: #F7FAFC;
+}
+
+.o_list_view tfoot {
+    background-color: $brand-primary;
+    color: #ffffff;
+}
+
+.o_form_view .oe_button_box .oe_stat_button .o_stat_info .o_stat_value {
+    color: $brand-secondary;
+}
+
+.o_form_view .o_horizontal_separator {
+    color: $brand-primary;
+    font-weight: 700;
+}
+
+.o_form_view {
+    .o_form_sheet_bg {
+        background: none !important;
+        background-color: $brand-surface !important;
+        padding: 0;
+
+        .o_form_sheet {
+            border: 1px solid $gray-lighter;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px -18px rgba(15, 39, 71, 0.45);
+            background: $brand-sheet;
+        }
+    }
+
+    .o_form_statusbar {
+        .o_statusbar_status {
+            > .o_arrow_button {
+                background: #ffffff;
+            }
+        }
+    }
+}
+
+/* Apps dashboard — no title overlays */
+.o_menu_apps .dropdown-menu.show {
+    position: fixed !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    margin: 0 !important;
+    padding: ($mksol-navbar-height + 16px) 24px 24px !important;
+    overflow: auto !important;
+    background-color: $brand-primary !important;
+    background-image:
+        linear-gradient(135deg, rgba(15, 39, 71, 0.88) 0%, rgba(22, 58, 95, 0.75) 45%, rgba(46, 196, 182, 0.50) 100%),
+        url(/soft_navy/dashboard);
+    background-size: cover !important;
+    background-position: center !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    z-index: 1000 !important;
+}
+
+.o_main_navbar > ul.o_menu_systray {
+    float: right;
+    position: relative;
+    z-index: 200;
+}
+
+.fa-th-large::before {
+    content: "\f00a";
+}
+
+.o_menu_apps .full {
+    width: 46px;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    z-index: 200;
+}
+
+.o-app-name {
+    color: #fff !important;
+    font-size: 14px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.o_menu_apps .dropdown-menu.show .o-app-icon {
+    padding: 12px 0 0;
+}
+
+.o_menu_apps .dropdown-menu.show .o-app-icon:hover {
+    box-shadow: 0 12px 24px -12px rgba(0, 0, 0, 0.55);
+    transform: translateY(-3px) scale(1.03);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dropdown-item.o_app {
+    background: transparent;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+}
+
+.o-menu-search-result {
+    color: #fff;
+}
+
+.o_thread_window .o_thread_window_header {
+    background-color: $brand-primary;
+}

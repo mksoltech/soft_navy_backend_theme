@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Safe inherit: only add a class on the login form (no body_classname replace) -->
+    <template id="soft_navy_login" inherit_id="web.login" name="Soft Navy Login Form">
+        <xpath expr="//form[contains(@class, 'oe_login_form')]" position="attributes">
+            <attribute name="class">oe_login_form soft_navy_login_form</attribute>
+        </xpath>
+    </template>
+</odoo>
