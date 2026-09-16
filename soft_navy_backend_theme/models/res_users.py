@@ -20,6 +20,7 @@ class ResUsers(models.Model):
     )
 
     def __init__(self, pool, cr):
+        """Allow users to edit theme prefs from Preferences (Odoo 14)."""
         init_res = super(ResUsers, self).__init__(pool, cr)
         extra_fields = ["sidebar_visible", "theme_font_size"]
         type(self).SELF_WRITEABLE_FIELDS = list(self.SELF_WRITEABLE_FIELDS)
@@ -32,7 +33,7 @@ class ResUsers(models.Model):
     def default_get(self, fields_list):
         res = super(ResUsers, self).default_get(fields_list)
         if "sidebar_visible" in fields_list:
-            company = self.env.user.company_id
+            company = self.env.company
             if company:
                 res["sidebar_visible"] = company.theme_show_sidebar_default
         return res

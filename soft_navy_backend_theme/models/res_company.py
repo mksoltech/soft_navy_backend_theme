@@ -114,7 +114,7 @@ class ResCompany(models.Model):
     @api.model
     def get_theme_config(self, company=None):
         """Return normalized theme settings for the given company."""
-        company = company or self.env.user.company_id
+        company = company or self.env.company
         if not company:
             company = self.search([], limit=1)
 

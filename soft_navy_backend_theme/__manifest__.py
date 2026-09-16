@@ -4,8 +4,8 @@
 
 {
     "name": "Soft Navy Backend Theme",
-    "summary": "Fully customizable navy backend theme with apps dashboard for Odoo 13 Community",
-    "version": "13.0.2.1.0",
+    "summary": "Fully customizable navy backend theme with apps dashboard for Odoo 14 Community",
+    "version": "14.0.2.1.0",
     "category": "Theme/Backend",
     "website": "https://mksoltech.com",
     "author": "MKSOL TECH",
@@ -25,18 +25,17 @@
         "views/login.xml",
     ],
     "images": [
-	"images/screen.png",
+        "images/screen.png",
         "static/description/banner.png",
         "static/description/icon.png",
         "static/description/app_dashboard.png",
         "static/description/theme_customization.png",
-        
     ],
     "live_test_url": "",
     "description": """
     Soft Navy Backend Theme
     =====================
-    A fully customizable enterprise-style backend theme for Odoo 13 Community.
+    A fully customizable enterprise-style backend theme for Odoo 14 Community.
 
     Features
     --------
@@ -46,8 +45,8 @@
     * Full-screen apps dashboard with custom background per company
     * Left app sidebar (show/hide in user preferences)
     * Styled login page
-    * Compatible with Odoo 13 Community Edition
+    * Compatible with Odoo 14 Community Edition
 
-    Technical name: soft_navy_backend_theme
+    Technical name: soft_navy_backend_theme_v14
     """,
 }
