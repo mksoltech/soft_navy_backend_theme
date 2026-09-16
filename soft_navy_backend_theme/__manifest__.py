@@ -25,11 +25,12 @@
         "views/login.xml",
     ],
     "images": [
+	"images/screen.png",
         "static/description/banner.png",
         "static/description/icon.png",
         "static/description/app_dashboard.png",
         "static/description/theme_customization.png",
-        "images/screen.png",
+        
     ],
     "live_test_url": "",
     "description": """
